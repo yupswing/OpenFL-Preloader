@@ -156,14 +156,14 @@ class Preloader extends NMEPreloader
         progress.graphics.drawRoundRect(0,0,w,h,r,r);
         progress.graphics.endFill();
 
-        var formatLoading = new TextFormat ("SquareFont", hh/10, color);
+        var formatLoading = new TextFormat ("SquareFont", Std.int(hh/10), color);
         textLoading.defaultTextFormat = formatLoading; //dynamic text (HTML5)
         textLoading.setTextFormat(formatLoading); //static text
         textLoading.autoSize = TextFieldAutoSize.CENTER;
         textLoading.x = ww/2-textLoading.textWidth/2;
         textLoading.y = y-textLoading.textHeight-0.5*h;
 
-        var formatPercent = new TextFormat ("SquareFont", hh/20, color);
+        var formatPercent = new TextFormat ("SquareFont", Std.int(hh/20), color);
         textPercent.defaultTextFormat = formatPercent; //dynamic text
         textPercent.setTextFormat(formatPercent); //static text
         textPercent.autoSize = TextFieldAutoSize.RIGHT;
